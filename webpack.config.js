@@ -24,13 +24,6 @@ module.exports = (env = {}) => {
     },
     // watch: true,
     devtool: env.prod ? 'source-map' : 'cheap-module-eval-source-map',
-    prodServer: {
-      contentBase: BUILD_DIR,
-      port: process.env.PORT || 9090,
-      compress: true,
-      hot: true,
-      open: true
-    },
     devServer: {
       contentBase: BUILD_DIR,
       port: process.env.PORT || 9090,

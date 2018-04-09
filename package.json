@@ -67,7 +67,7 @@
   "scripts": {
     "dev": "webpack -d --watch --profile --json > compilation-stats.json --env.dev",
     "start": "webpack-dev-server --color --inline --env.dev",
-    "build": "webpack -p --env.prod",
+    "postinstall": "webpack -p --env.prod",
     "clean": "rimraf ./build"
   },
   "engines": {
