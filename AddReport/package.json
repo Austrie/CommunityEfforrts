@@ -1,0 +1,6 @@
+{
+  "name": "AddReport",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AddReport.js"
+}
