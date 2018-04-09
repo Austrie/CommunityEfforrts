@@ -68,7 +68,7 @@
     "dev": "webpack -d --watch --profile --json > compilation-stats.json --env.dev",
     "start": "webpack-dev-server --color --inline --env.dev",
     "build": "webpack -p --env.prod",
-    "heroku-postbuild": "echo 'const config = require('./webpack.config.js');
+    "heroku-postbuild": "echo \"const config = require('./webpack.config.js');
     const webpack = require('webpack');
 
     config.plugins.push(
@@ -79,7 +79,7 @@
       })
 
 
-    module.exports = config;' > webpack.prod.config.js; webpack -p --config ./webpack.prod.config.js --progress",
+    module.exports = config;\" > webpack.prod.config.js; webpack -p --config ./webpack.prod.config.js --progress",
     "clean": "rimraf ./build"
   },
   "engines": {
