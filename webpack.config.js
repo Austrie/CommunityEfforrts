@@ -24,9 +24,6 @@ module.exports = (env = {}) => {
       filename: '[name].bundle.js'
     },
     // watch: true,
-    process.env: {
-      "NODE_ENV": JSON.stringify("production")
-    },
     devtool: env.prod ? 'source-map' : 'cheap-module-eval-source-map',
     devServer: {
       contentBase: BUILD_DIR,
