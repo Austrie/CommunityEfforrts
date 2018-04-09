@@ -7,6 +7,7 @@ config.plugins.push(
       "NODE_ENV": JSON.stringify("production")
     }
   })
+);
 
 
 module.exports = config;
