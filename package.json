@@ -68,7 +68,7 @@
     "dev": "webpack -d --watch --profile --json > compilation-stats.json --env.dev",
     "start": "webpack-dev-server --color --inline --env.dev",
     "build": "webpack -p --env.prod",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
+    "heroku-postbuild": "webpack -p",
     "clean": "rimraf ./build"
   },
   "engines": {
