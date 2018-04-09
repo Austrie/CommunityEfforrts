@@ -43,7 +43,6 @@ class AddReport extends Component {
   }
 
   componentDidMount() {
-    console.log("THIS STATE: ", this.state)
     try {
       Geocode.fromLatLng(this.state.coords.longitude, this.state.coords.latitude)
         .then(response => {
@@ -74,8 +73,7 @@ class AddReport extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    if (this.state.name == "" || this.state.address == "" ||
-      this.state.additional_information == "" || this.state.type == "0") {
+    if (this.state.name == "" || this.state.address == "" || this.state.type == "0") {
         this.handleOpenModal();
       } else {
         const ref = firebase.database().ref('temp2higher/reports')
@@ -167,6 +165,7 @@ class AddReport extends Component {
   }
 }
 
+// export default AddReport
 export default geolocated({
   positionOptions: {
     userDecisionTimeout: 5000
