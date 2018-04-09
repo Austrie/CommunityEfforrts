@@ -1,6 +1,7 @@
 const config = require('./webpack.config.js');
 const webpack = require('webpack');
 
+console.log("**************CONFIG:", config)
 config.plugins.push(
   new webpack.DefinePlugin({
     "process.env": {
